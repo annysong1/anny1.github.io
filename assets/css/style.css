@@ -1,0 +1,296 @@
+/* This is for everything */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Courgette', cursive;
+	background-color: #f4dcdc;
+}
+
+/*This is for the nav at the very top of the page*/
+.top_container {
+	position: fixed;
+	width: 100%;
+	height: 150px;
+	padding: 15px 100px;
+	transition: 0.3s;
+	box-sizing: border-box;
+	z-index: 100;
+}
+
+nav.black {
+	background: rgba(0, 0, 0, 0.8);
+	height: 100px;
+	padding: 10px 100px;
+}
+
+.logo {
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 40px;
+	transition: 0.3s;
+}
+
+nav.black {
+	color: white;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase; 
+	transition: 0.3s;
+}
+
+nav.black ul li a  {
+	color: #fff;
+}
+
+nav ul li a.active {
+	background: #65B07E;
+	color: #fff;
+}
+
+/* Main pic */
+.avatar {
+	position: absolute;
+	left: 150px;
+	top: 200px;	
+	z-index: 30;
+	cursor: pointer;
+}
+
+.avatar:hover {
+	transform: scale(1.1);
+}
+
+section.sec11 {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.main-picture {
+	opacity: 0.5;
+	-webkit-filter: grayscale(80%);
+	-moz-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    filter: grayscale(50%);
+}
+
+.name-title {
+	color: #42b29c;
+	margin-top: 0px;
+	font-size: 200px;
+	text-align: center;
+	position: absolute;
+	top: 500px;
+	margin-left: calc((100% - 934px)/2 );
+}
+
+.title {
+	font-size: 70px;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: absolute;
+	top: 200px;
+	right: 70px;
+	width: 800px;
+}
+
+.text {
+	position: absolute;
+	top: 400px;
+	right: 170px;
+	font-size: 20px;
+	color: black;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	width: 600px;
+	text-align: center;
+	font-weight: 50;
+	line-height: 1.3;
+}
+
+.emailtext {
+	position: absolute;
+	bottom: 15 0px;
+	right: 420px;
+	font-size: 40px;
+	color: black;
+	font-weight: 200;
+	font-family: 'Courgette', cursive;
+	width: 600px;
+	text-align: center;
+}
+
+/*This is footer bois*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #545b59;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    font-size: 30px;
+}
+
+.section {
+	width: 100%;
+	height: 900px;
+	position: relative;
+}
+
+.footerlogo {
+	position: relative;
+	height: 50px;
+	margin: 5px 20px;
+	padding-top: 15px;
+}
+
+#facebook_logo {
+	width: 48px;
+	height: 48px;
+}
+
+.carousel-container {
+	width: 960px;
+	margin: 0 auto;
+	height: 800px;
+	overflow: hidden;
+	position: relative;	
+}
+
+.carousel {
+	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all 0.3s;
+}
+
+.carousel-item {
+	width: 960px;
+	position: relative;
+	height: 90%;
+	float: left;
+	top: 10%;
+}
+
+.carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the carousel next button */
+.carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+.photo {
+	height: 80%;
+	width: 100%;
+	object-fit: scale-down;
+
+}
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+hr {
+	border-color: black;
+	width: 60%;
+	height: 2px;
+	border-right: none;
+	border-left: none;
+}
+
+/* Gallery */
+
+.polaroid {
+  position: relative;
+  width: 250px;
+  margin-left: 120px;
+  margin-right: 100px;
+  margin-top: 50px;
+  display: inline-block;
+}
+ 
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+ 
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
+  z-index: 40;
+}
+
+.polaroid:hover {
+	transform: scale(1.1);
+}
+
+.sf-pic {
+	position: relative;
+	right: 75px;
+	top: -10px;
+	width: 390px;
+}
+
+.garrett-pic {
+	position: relative;
+	right: 75px;
+	top: -10px;
+	width: 350px;
+}
+
+#hobbies_section {
+	height: 400px;
+}
